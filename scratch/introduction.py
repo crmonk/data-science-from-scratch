@@ -99,8 +99,7 @@ def friends_of_friends(user):
 
 
 #print(friends_of_friends(users[3]))               # Counter({0: 2, 5: 1})
-
-
+    
 assert friends_of_friends(users[3]) == Counter({0: 2, 5: 1})
 
 interests = [
