@@ -75,10 +75,11 @@ def foaf_ids_bad(user):
 
 assert foaf_ids_bad(users[0]) == [0, 2, 3, 0, 1, 3]
 
+"""
 print(friendships[0])  # [1, 2]
 print(friendships[1])  # [0, 2, 3]
 print(friendships[2])  # [0, 1, 3]
-
+"""
 
 assert friendships[0] == [1, 2]
 assert friendships[1] == [0, 2, 3]
@@ -97,7 +98,7 @@ def friends_of_friends(user):
     )
 
 
-print(friends_of_friends(users[3]))               # Counter({0: 2, 5: 1})
+#print(friends_of_friends(users[3]))               # Counter({0: 2, 5: 1})
 
 
 assert friends_of_friends(users[3]) == Counter({0: 2, 5: 1})
@@ -253,5 +254,6 @@ words_and_counts = Counter(word
 
 for word, count in words_and_counts.most_common():
     if count > 1:
-        print(word, count)
+        #print(word, count)
+        pass
 
